@@ -19,3 +19,18 @@
 | Excluded tools | select | 1 |
 | Must be vegetarian | #default-checkbox | 1 |
 | Custom Pizza Name | input#pizza-name | 1 |
+
+### Step 0.5: Manual Test Case QP-01
+
+**Test Case ID:** QP-01
+**Title:** A custom pizza reaches the admin list
+
+| Step | Expected Result | Actual Result | Status |
+|------|-----------------|---------------|--------|
+| 1 | Correct homepage heading | Looking to break out of your pizza routine? | PASS |
+| 2 | Four Advanced fields appear | All four fields displayed | PASS |
+| 3 | Restrictions and pizza name entered correctly | Max calories: 600; Excluded tool: Knife; Vegetarian: checked; Name: Lab Pizza 20261115-022900 | PASS |
+| 4 | Correct pizza name, tool other than Knife, calories ≤ 600 | Name: Lab Pizza 20261115-022900; Tool: Pizza cutter; Calories: 500 | PASS |
+| 5 | Rating without login requires login | Please log in first. | PASS |
+| 6 | Admin login succeeds | Latest pizza recommendations displayed | PASS |
+| 7 | Admin list contains the same pizza name and tool | Lab Pizza 20261115-022900 (tool=Pizza cutter, ingredients_number=6) | PASS |
