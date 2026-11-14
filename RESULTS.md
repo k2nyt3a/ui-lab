@@ -10,3 +10,12 @@
 - ChromeDriver path: C:\drivers\chromedriver-win64\chromedriver.exe
 - Environment variable: CHROMEDRIVER
 - Result: Successfully configured and verified
+
+### Step 0.4: Stable Locators
+
+| Element | Locator | Matches |
+|---------|---------|---------|
+| Pizza, Please! button | button[name='pizza-please'] | 1 |
+| Excluded tools | select | 1 |
+| Must be vegetarian | #default-checkbox | 1 |
+| Custom Pizza Name | input#pizza-name | 1 |
