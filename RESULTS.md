@@ -41,3 +41,12 @@
 - Intentional failure: Changed `Web form` to `Web Form`
 - Failure reason: Page title did not match the expected title
 - Final run: PASS (1 passed, 0 failed)
+
+### Step 3.8: Robot Framework Full Runs
+
+| Run | Result | Tests Passed | Elapsed Time | Pizza Name |
+|-----|--------|--------------|--------------|------------|
+| Run 1 | PASS | 1/1 | 10.680 s | Lab Pizza 20261115-031114 |
+| Run 2 | PASS | 1/1 | 11.133 s | Lab Pizza 20261115-031330 |
+
+Both runs passed using headless Chrome. Each run generated a unique pizza name and completed all seven steps of QP-01.
