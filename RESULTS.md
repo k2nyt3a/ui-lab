@@ -34,3 +34,10 @@
 | 5 | Rating without login requires login | Please log in first. | PASS |
 | 6 | Admin login succeeds | Latest pizza recommendations displayed | PASS |
 | 7 | Admin list contains the same pizza name and tool | Lab Pizza 20261115-022900 (tool=Pizza cutter, ingredients_number=6) | PASS |
+
+### Step 3.2: First Robot Framework Test
+
+- Initial run: PASS (1 passed, 0 failed)
+- Intentional failure: Changed `Web form` to `Web Form`
+- Failure reason: Page title did not match the expected title
+- Final run: PASS (1 passed, 0 failed)
