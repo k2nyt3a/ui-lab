@@ -35,6 +35,7 @@
 | 6 | Admin login succeeds | Latest pizza recommendations displayed | PASS |
 | 7 | Admin list contains the same pizza name and tool | Lab Pizza 20261115-022900 (tool=Pizza cutter, ingredients_number=6) | PASS |
 
+## Part 3: Robot Framework
 ### Step 3.2: First Robot Framework Test
 
 - Initial run: PASS (1 passed, 0 failed)
@@ -50,3 +51,11 @@
 | Run 2 | PASS | 1/1 | 11.133 s | Lab Pizza 20261115-031330 |
 
 Both runs passed using headless Chrome. Each run generated a unique pizza name and completed all seven steps of QP-01.
+
+## Part 4: Cypress
+### Step 4.3: Cypress Web Form Test
+
+- Initial test: PASS (1 passed, 0 failed)
+- Intentional failure: Changed expected title from `Web form` to `Web Form`
+- Failure reason: Page title is case-sensitive
+- Final test: PASS (1 passed, 0 failed)
