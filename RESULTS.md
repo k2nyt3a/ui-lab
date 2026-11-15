@@ -88,3 +88,12 @@ Step 5: PASS — Rating without login was blocked
 - Clicked the Love it! button
 - Expected message: Please log in first.
 - Actual message: Please log in first.
+
+### Step 4.6: Cypress API Interception
+
+- Endpoint: POST /api/pizza
+- Response status: 200
+- Request body: maxCaloriesPerSlice = 600
+- API tool matches the displayed pizza tool: PASS
+- API calories match the displayed calories: PASS
+- Result: PASS (1 passed, 0 failed)
