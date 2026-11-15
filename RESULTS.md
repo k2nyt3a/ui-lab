@@ -120,3 +120,33 @@ Each run generated a unique pizza name and completed all seven steps of QP-01.
 Evidence from Run 2:
 - 3 screenshots: recommendation, login-required message, and admin list
 - 2 videos: pizza-scenario.cy.js.mp4 and web-form.cy.js.mp4
+
+## Part B: Reflection
+
+### 1. Why use the label instead of the ID?
+
+The calories input shares the same ID with other input fields, so using the ID might select the wrong one. Using the label helps us find the correct input. Giving each input a unique ID would make testing easier and more reliable.
+
+### 2. What type of test oracle is used in Step 7?
+
+It uses a consistency oracle because we compare the pizza tool in two different places. The tool in the recommendation should match the one in the admin list. This would catch a bug where the admin page displays the wrong tool.
+
+### 3. How could we check if the pizza is vegetarian?
+
+We could check whether the API response has `vegetarian: true`. This would confirm that the generated pizza follows the vegetarian restriction. We would need the API response or vegetarian information displayed on the page.
+
+### 4. Compare Robot Framework and Cypress.
+
+Robot Framework waited for elements using SeleniumLibrary, while Cypress automatically retried commands and used `cy.wait()` for the API response. I found Cypress quicker to write because the commands were shorter. Robot Framework had detailed logs, but Cypress screenshots and videos made it easier to see what happened.
+
+### 5. Which tool would you choose for Project 2?
+
+I would choose Cypress for Project 2. It was easier to write and debug because of its simple commands and automatic waiting. I also liked that it could check API requests and record screenshots and videos.
+
+### 6. Part 3 — Robot Framework
+
+If QuickPizza changes the locator of the calories input, I would update it in `quickpizza.resource`. The test uses keywords from this resource file instead of locating the input directly. This means I can fix the locator without changing the test steps in `pizza_scenario.robot`.
+
+### 7. Part 4 — Cypress
+
+QP-01 needs to stay in one test because Cypress clears cookies before each test. QuickPizza uses cookies to keep the browser connected to the same server. If Steps 6 and 7 were in another test, the admin list might not contain the pizza created earlier.
