@@ -59,3 +59,32 @@ Both runs passed using headless Chrome. Each run generated a unique pizza name a
 - Intentional failure: Changed expected title from `Web form` to `Web Form`
 - Failure reason: Page title is case-sensitive
 - Final test: PASS (1 passed, 0 failed)
+
+### Step 4.4: QuickPizza Homepage and Advanced Mode
+
+- Test: QP-01 Steps 1–2
+- Browser: Chrome 157
+- Result: PASS (1 passed, 0 failed)
+- Verified:
+  - Correct homepage heading
+  - Advanced mode enabled
+  - All four advanced fields displayed
+
+### Step 4.5: QuickPizza Restrictions
+
+QP-01 Step 3: PASS
+- Max calories: 600
+- Excluded tool: Knife
+- Vegetarian: checked
+- Unique pizza name generated using date and time
+
+QP-01 Step 4: PASS
+- Pizza generated successfully
+- Verified pizza name matches the requested name
+- Verified excluded tool (Knife) was not used
+- Verified calories per slice are at most 600
+
+Step 5: PASS — Rating without login was blocked
+- Clicked the Love it! button
+- Expected message: Please log in first.
+- Actual message: Please log in first.
