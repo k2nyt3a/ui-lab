@@ -106,3 +106,17 @@ Step 5: PASS — Rating without login was blocked
 - Pizza name matched: PASS
 - Pizza tool matched: PASS
 - Full QP-01 test: PASS (1 passed, 0 failed)
+
+### Step 4.8: Cypress Full Runs
+
+| Run | Result | Tests Passed | Duration | Pizza Name |
+|-----|--------|--------------|----------|------------|
+| Run 1 | PASS | 2/2 | 13 s | Lab Pizza 20261115-160006 |
+| Run 2 | PASS | 2/2 | 17 s | Lab Pizza 20261115-160341 |
+
+Both runs passed using headless Chrome 157.
+Each run generated a unique pizza name and completed all seven steps of QP-01.
+
+Evidence from Run 2:
+- 3 screenshots: recommendation, login-required message, and admin list
+- 2 videos: pizza-scenario.cy.js.mp4 and web-form.cy.js.mp4
