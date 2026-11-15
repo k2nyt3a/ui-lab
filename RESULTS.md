@@ -97,3 +97,12 @@ Step 5: PASS — Rating without login was blocked
 - API tool matches the displayed pizza tool: PASS
 - API calories match the displayed calories: PASS
 - Result: PASS (1 passed, 0 failed)
+
+
+### Step 4.7: Cypress Admin Login and Verification
+
+- Step 6: PASS — Admin login succeeded
+- Step 7: PASS — Generated pizza found in the admin list
+- Pizza name matched: PASS
+- Pizza tool matched: PASS
+- Full QP-01 test: PASS (1 passed, 0 failed)
